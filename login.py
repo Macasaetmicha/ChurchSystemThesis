@@ -80,9 +80,9 @@ class Login:
             self.feedback_label.config(text="Invalid credentials, try again.", fg="red")
 
     def redirect_to_main(self):
-        self.root.destroy()  # Close login window
-        main_root = Tk()  # New Tk instance for main page
-        MainPage(main_root)  # Initialize main page
+        self.root.destroy() 
+        main_root = Tk()  
+        MainPage(main_root)  
         main_root.mainloop()
 
 if __name__ == "__main__":

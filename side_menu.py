@@ -8,7 +8,7 @@ class SideMenu:
         title_label = Label(self.frame, text="Menu", font=("Arial", 14), bg="#333", fg="white")
         title_label.pack(pady=20)
 
-        self.app = app  # Store app reference to call methods for navigation
+        self.app = app  
         
         self.create_menu_button("Dashboard", command=self.go_dashboard)
         self.create_menu_button("Binyag", command=self.go_binyag)
