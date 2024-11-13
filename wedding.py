@@ -1,3 +1,4 @@
+# dashboard.py
 from tkinter import *
 
 class Wedding:
@@ -6,3 +7,4 @@ class Wedding:
         label = Label(self.frame, text="Wedding Content", font=("Arial", 24))
         label.pack(pady=20)
 
+# Similarly create classes for Binyag, Kumpil, Wedding, Death, Settings, and History

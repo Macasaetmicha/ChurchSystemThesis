@@ -1,0 +1,41 @@
+<!-- sidebar.html -->
+<div class="main-menu menu-fixed menu-light menu-accordion menu-shadow expanded" data-scroll-to-active="true">
+    <div class="navbar-header">
+        <ul class="nav navbar-nav">
+            <li class="nav-item mr-auto">
+                <a class="navbar-brand" href="{{ url_for('Index') }}">
+                    <div class="brand-logo">
+                       
+                    </div>
+                    <!--div class="brand-name">
+                        <h4 class="brand-text mb-0">C.R.M<br><h6 class="brand-text" style="font-size: 9px; margin:2px">Church Records Management</h6></h4>
+                    </div-->
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+
+            <li class="nav-item {% if request.endpoint == 'dashboard' %}active{% endif %}">
+                <a href="{{ url_for('dashboard') }}" class="list-group-item list-group-item-action">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </a>
+            </li>
+
+            <li class="nav-item {% if request.endpoint == 'Index' %}active{% endif %}">
+                <a href="{{ url_for('Index') }}" class="list-group-item list-group-item-action">
+                    <i class="fas fa-home"></i> Index
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{ url_for('logout') }}" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-right-from-bracket"></i> Logout
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
